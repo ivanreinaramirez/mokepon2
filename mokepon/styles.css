@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Tektur&display=swap');
+
+  body {
+    font-family: 'Tektur', cursive;
+    background-color: #468B97;
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitulo {
+    color: white;
+    font-size: 30px;
+}
+
+.titulo {
+    color: white;
+    font-size: 50px;
+}
+
+.tarjetas, .tarjetas-ataque {
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+    color: #1D5B79;
+    width: 170px;
+    height: 150px;
+    background: #F3AA60;
+    padding: 10px;
+    margin: 10px;
+    border: 4px solid #EF6262;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    }   
+
+.tarjeta-de-mokepon img {
+        width: 60px;
+        height: 60px; 
+        display: flex;
+        margin: 7px;  
+}
+
+#boton-mascota {
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    padding: 3px;
+    margin-top: 30px;
+    border: 3px dashed white;
+    border-radius: 20px;
+    box-sizing: border-box;
+    color: whitesmoke;
+    font-size: 16px;
+    font-family: 'Kanit', sans-serif;
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjetas-ataque {
+    display: flex;
+    gap: 10 px;
+}
+
+.boton-de-ataque {
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: 5px;
+    border-color: transparent;
+    width: 80px;
+    color:rgb(58, 56, 56);
+    font-family: 'Kanit', sans-serif;
+    font-size: 16px;
+}
+
+#mensajes {
+    width: 280px;
+    background-color: #FFD0D0;
+    height: 50px;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-reiniciar {
+    border: transparent;
+    color: #1D5B79;
+    background-color: transparent;
+    font-family: 'Kanit', sans-serif;
+    margin-top: 20px;
+}
+
+.ataque {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    text-align: center;
+}
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button {
+    width: 80px;
+    height: 40px;
+    background: transparent;
+    padding: 3px;
+    margin: 5px 0px;
+    border: 3px dashed white;
+    border-radius: 20px;
+    box-sizing: border-box;
+    color: whitesmoke;
+    font-size: 16px;
+    font-family: 'Kanit', sans-serif;
+}
+
+@media (max-width: 560px) {
+    .tarjetas, .tarjetas-ataque {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 300px) {
+    #ver-mapa div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+input:checked + label {
+    background-color: #EF6262;    
+}
+
+input {
+    display: none;
+}
